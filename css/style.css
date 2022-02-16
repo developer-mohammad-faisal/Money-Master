@@ -1,0 +1,13 @@
+.images{
+  width: 500px;
+}
+#clothes{
+  margin-left: -25px;
+}
+#calculation{
+   background-color: #F8F8F8;
+   border-radius: 10px;
+}
+.save-input{
+  width: 5;
+}
