@@ -11,16 +11,18 @@
   <!-- ----Bootstrap Liink---- -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body> 
+<body>
+   <header> 
+          <h1 class="fw-bold text-center pt-5 pb-5">Monthly Calculation</h1>
+   </header>
   
-    <div class="calculation">
-          <div class="container">
+    <section class="container">
             <div class="row">
                   <div class="col-md-6">
                         <img class="images" src="images/money.jpg" alt="">
                   </div>
                   <div class="col-md-6">
-                    <form id="calculation" class="text-center">
+                    <form class="text-center calculation">
                         <div class="mb-3 pt-5">
                           <h5 class="text-center text-uppercase mb-3">Income</h5>
                           <label class="form-label">Income:<label>
@@ -42,7 +44,7 @@
                       </div>
                         
                       <div class="pb-4">
-                        <button class="bg-info fw-bold w-25 p-2 fs-6 border-0 text-white">Calculate</button>
+                        <button class="bg-info fw-bold w-25 p-2 fs-6 border-0 text-white shadow">Calculate</button>
                       </div>
                       <div>
                          <h5>Total Expenses: 5000</h5>
@@ -53,7 +55,7 @@
 
                      <div class="mb-3">
                          <label class="form-label">Save: <label>
-                         <input type="text" class="form-control save-input"> %<button class="ms-2 p-2 text-white border-0 bg-info fw-bold">Save</button>
+                         <input type="text" class="form-control"> %<button class="ms-2 p-2 text-white border-0 bg-info fw-bold">Save</button>
                     </div>
                     <div>
                       <h5>Saving Amount: 2000</h5>
@@ -64,9 +66,8 @@
                     </form>
                   </div>
             </div>
-          </div>
           
-    </div>
+    </section>
     
 
 
@@ -74,7 +75,7 @@
 
 
 
-
+<script src="js/money-master.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
+</html

@@ -1,13 +1,17 @@
+h1{
+  color: #31A5AC;
+}
 .images{
-  width: 500px;
+  width: 100%;
+}
+img{
+height: 665px;
+border-radius: 10px;
 }
 #clothes{
   margin-left: -25px;
 }
-#calculation{
+.calculation{
    background-color: #F8F8F8;
    border-radius: 10px;
-}
-.save-input{
-  width: 5;
 }
