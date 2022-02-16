@@ -5,7 +5,7 @@ h1{
   width: 100%;
 }
 img{
-height: 665px;
+height: 775px;
 border-radius: 10px;
 }
 #clothes{
@@ -14,4 +14,12 @@ border-radius: 10px;
 .calculation{
    background-color: #F8F8F8;
    border-radius: 10px;
+}
+.save-input{
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  width: 150px;
+  margin-right: 8px;
 }
