@@ -1,6 +1,6 @@
 
 
-// calculate
+// calculate Button 
 document.getElementById('calculate').addEventListener('click',function(){
       // food
       const foodInput = document.getElementById('food-input');
@@ -17,13 +17,13 @@ document.getElementById('calculate').addEventListener('click',function(){
       const clothesInputText = clothesInput.value;
       const clothesNumber = parseFloat(clothesInputText); 
       clothesInput.value = ""; 
+      const totalInput = foodNumber + rentNumber + clothesNumber;
       // total expenses
       const totalExpenses = document.getElementById('total-expenses');
       const totalExpensesText = totalExpenses.innerText;
-      const totalExpensesNumber = parseInt(totalExpenses);
-      const newTotalExpenses = foodNumber + rentNumber + clothesNumber + totalExpensesNumber;
-      totalExpenses.innerText = newTotalExpenses;
-      
+      const totalExpensesNumber = parseFloat(totalExpensesText);
+      const ExpensesTotal = totalExpensesNumber + totalInput;
 
+      totalExpenses.innerText = ExpensesTotal;
       
 })
