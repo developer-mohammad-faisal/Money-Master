@@ -8,7 +8,7 @@ function incomeCalculate(){
   return totalAmount;
 }
 
-// calculate Button 
+// Salculate Button 
 document.getElementById('calculate-btn').addEventListener('click',function(){
 
       // total expenses
@@ -22,7 +22,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 
 
 
-
+// Save Button 
 document.getElementById('save-btn').addEventListener('click',function(){
   // save
   const saveInput = document.getElementById('save-input');
