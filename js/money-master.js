@@ -2,6 +2,12 @@
 
 // calculate Button 
 document.getElementById('calculate').addEventListener('click',function(){
+
+      // income
+      const incomeInput = document.getElementById('income-input');
+      const incomeInputText = incomeInput.value;
+      const incomeNumber = parseFloat(incomeInputText);
+      incomeInput.value = "";
       // food
       const foodInput = document.getElementById('food-input');
       const foodInputText = foodInput.value;
@@ -18,12 +24,19 @@ document.getElementById('calculate').addEventListener('click',function(){
       const clothesNumber = parseFloat(clothesInputText); 
       clothesInput.value = ""; 
       const totalInput = foodNumber + rentNumber + clothesNumber;
+
       // total expenses
       const totalExpenses = document.getElementById('total-expenses');
       const totalExpensesText = totalExpenses.innerText;
       const totalExpensesNumber = parseFloat(totalExpensesText);
-      const ExpensesTotal = totalExpensesNumber + totalInput;
+      const expensesTotal = totalExpensesNumber + totalInput;
+      totalExpenses.innerText = expensesTotal;
 
-      totalExpenses.innerText = ExpensesTotal;
-      
+      // total balance
+      const totalBalance = document.getElementById('total-balance');
+      const totalBalanceText = totalBalance.innerText;
+      const totalBalanceNumber = parseFloat(totalBalanceText);
+      const balanceTotal = incomeNumber - expensesTotal;
+      totalBalance.innerText = balanceTotal;
+
 })
