@@ -1,6 +1,8 @@
 h1{
   color: #31A5AC;
 }
+
+/*------------- Image Style -----------*/
 .images{
   width: 100%;
 }
@@ -8,14 +10,20 @@ img{
 height: 775px;
 border-radius: 10px;
 }
+
+/*------------ clothes Style ---------*/
 #clothes{
   margin-left: -25px;
 }
+
+/*------ Calculation Button Style ----*/
 .calculation{
    background-color: #F8F8F8;
    border-radius: 10px;
 }
-.save-input{
+
+/*---------- Save Input Style --------*/
+.saveInput{
   outline: 0;
   border: none;
   border-radius: 4px;
